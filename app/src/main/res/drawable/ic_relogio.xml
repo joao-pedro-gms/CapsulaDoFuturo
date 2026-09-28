@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    João Pedro G M Silva
+    Matrícula: 20251012000740
+    ADS PUC Goiás
+    Relógio do futuro (vetor próprio, sem binário).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Mostrador -->
+    <path
+        android:fillColor="#EDE9FE"
+        android:pathData="M6,24 A18,18 0 0 1 24,6 A18,18 0 0 1 42,24 A18,18 0 0 1 24,42 A18,18 0 0 1 6,24 Z" />
+    <path
+        android:strokeColor="#5B21B6"
+        android:strokeWidth="3"
+        android:pathData="M6,24 A18,18 0 0 1 24,6 A18,18 0 0 1 42,24 A18,18 0 0 1 24,42 A18,18 0 0 1 6,24 Z" />
+    <!-- Ponteiros -->
+    <path
+        android:strokeColor="#5B21B6"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M24,24 V13" />
+    <path
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M24,24 H32" />
+    <!-- Centro do ponteiro -->
+    <path
+        android:fillColor="#3B0764"
+        android:pathData="M24,24 m-2.5,0 a2.5,2.5 0 1 0 5,0 a2.5,2.5 0 1 0 -5,0" />
+</vector>

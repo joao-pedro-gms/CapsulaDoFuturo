@@ -1,0 +1,109 @@
+Uma cápsula do tempo guarda uma mensagem para ser lida no futuro. Nesta atividade, você desenvolverá um aplicativo Android que permita ao usuário escrever uma mensagem, informar quando ela deverá ser aberta e visualizar sua cápsula pronta em uma segunda tela.
+
+O objetivo é aplicar os conhecimentos trabalhados sobre construção de layouts, componentes de formulário, validação, eventos, View Binding e navegação entre telas com Intents.
+Funcionamento do aplicativo
+
+O aplicativo deverá possuir, no mínimo, duas telas:
+
+    Tela de criação da cápsula;
+    Tela de visualização da cápsula.
+
+1. Tela de criação da cápsula
+
+A primeira tela deverá apresentar uma identidade visual relacionada ao tema e conter:
+
+    Uma ImageView com uma imagem representando uma cápsula, carta, relógio, portal ou outro elemento relacionado ao futuro;
+    Um campo para o nome do autor;
+    Um campo para o título da cápsula;
+    Um campo numérico para o ano em que a cápsula deverá ser aberta;
+    Um campo de múltiplas linhas para a mensagem destinada ao futuro;
+    Uma SeekBar para definir o grau de importância da mensagem, entre 0% e 100%;
+    Uma TextView que mostre, em tempo real, o valor selecionado na SeekBar;
+    Um botão com o texto Selar cápsula.
+
+Exemplo de informações preenchidas:
+
+    Autor: Fernando
+    Título: Uma mensagem para o meu futuro
+    Ano de abertura: 2030
+    Mensagem: Espero que você ainda se lembre dos sonhos que tinha quando escreveu esta mensagem.
+    Importância: 85%
+
+2. Validação do formulário
+
+Antes de abrir a segunda tela, o aplicativo deverá verificar:
+
+    Se o nome do autor foi preenchido;
+    Se o título foi preenchido;
+    Se o ano foi informado;
+    Se o ano de abertura é posterior a 2026;
+    Se a mensagem foi preenchida;
+    Se a mensagem possui pelo menos 20 caracteres.
+
+Quando um campo estiver inválido, o aplicativo deverá:
+
+    Exibir uma mensagem de erro no campo correspondente;
+    Posicionar o foco no campo com problema;
+    Impedir a abertura da segunda tela enquanto o formulário não estiver válido.
+
+3. Navegação e envio dos dados
+
+Quando o usuário tocar em Selar cápsula e todos os dados forem válidos, o aplicativo deverá:
+
+    Criar uma Intent explícita;
+    Abrir a segunda Activity;
+    Enviar pela Intent o nome do autor, o título, o ano, a mensagem e o percentual de importância.
+
+A segunda Activity deverá recuperar todos os dados enviados e apresentá-los na interface.
+4. Tela de visualização da cápsula
+
+A segunda tela deverá exibir:
+
+    Uma imagem relacionada à cápsula;
+    O título informado pelo usuário;
+    O nome do autor;
+    O ano de abertura;
+    A mensagem escrita;
+    O percentual de importância.
+
+A apresentação poderá utilizar uma frase semelhante a:
+
+“Cápsula criada por Fernando para ser aberta em 2030.”
+
+Essa tela também deverá possuir:
+
+    Um botão Editar, que retorne à tela anterior;
+    Um botão Compartilhar, que utilize uma Intent implícita com ACTION_SEND para compartilhar o conteúdo textual da cápsula com outro aplicativo instalado no dispositivo.
+
+Exemplo do texto compartilhado:
+
+Minha cápsula para 2030: Uma mensagem para o meu futuro. Espero que você ainda se lembre dos sonhos que tinha quando escreveu esta mensagem.
+5. Requisitos técnicos
+
+O projeto deverá:
+
+    Ser desenvolvido em Java;
+    Utilizar layouts em XML;
+    Utilizar ConstraintLayout;
+    Possuir IDs claros e expressivos para os componentes;
+    Manter os textos apresentados ao usuário em strings.xml;
+    Utilizar inputType apropriado em cada campo;
+    Possuir contentDescription nas imagens informativas;
+    Declarar corretamente as duas Activities no AndroidManifest.xml;
+    Utilizar setOnClickListener nos botões;
+    Utilizar OnSeekBarChangeListener para acompanhar as alterações da SeekBar;
+    Permanecer legível e organizado quando o dispositivo for rotacionado;
+    Compilar e executar sem erros.
+
+Não é necessário utilizar banco de dados, acesso à internet, RecyclerView, fragmentos ou bibliotecas externas.
+6. Personalização
+
+Cada estudante deverá criar uma identidade visual própria para o aplicativo, alterando:
+
+    Nome apresentado pelo aplicativo;
+    Imagens;
+    Cores;
+    Textos de orientação;
+    Organização visual dos componentes.
+
+A personalização não poderá comprometer a legibilidade nem o funcionamento do formulário

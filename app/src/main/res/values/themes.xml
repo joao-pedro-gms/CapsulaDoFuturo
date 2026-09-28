@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    João Pedro G M Silva
+    Matrícula: 20251012000740
+    ADS PUC Goiás
+-->
+<resources>
+    <style name="Theme.CapsulaDoFuturo" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaria</item>
+        <item name="colorOnPrimary">@color/cartao</item>
+        <item name="colorSecondary">@color/destaque</item>
+        <item name="android:statusBarColor">@color/primaria_escura</item>
+        <item name="android:windowBackground">@color/fundo</item>
+        <item name="android:textColorPrimary">@color/texto_principal</item>
+    </style>
+</resources>

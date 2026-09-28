@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    João Pedro G M Silva
+    Matrícula: 20251012000740
+    ADS PUC Goiás
+-->
+<resources>
+    <string name="app_name">Cápsula do Futuro</string>
+
+    <!-- Rodapé de autoria -->
+    <string name="credito_autor">Desenvolvido por João Pedro G M Silva — Matrícula 20251012000740 — ADS PUC Goiás</string>
+
+    <!-- Tela 1: criação -->
+    <string name="orientacao_criacao">Escreva uma mensagem para o futuro e escolha quando ela deve ser aberta.</string>
+    <string name="dica_autor">Nome do autor</string>
+    <string name="dica_titulo">Título da cápsula</string>
+    <string name="dica_ano">Ano de abertura (ex.: 2030)</string>
+    <string name="dica_mensagem">Mensagem para o futuro</string>
+    <string name="rotulo_importancia">Importância da mensagem</string>
+    <string name="valor_importancia">Importância: %1$d%%</string>
+    <string name="botao_selar">Selar cápsula</string>
+    <string name="descricao_imagem_capsula">Ilustração de uma cápsula do tempo com um relógio</string>
+
+    <!-- Validação (mensagens exibidas com setError no campo) -->
+    <string name="erro_autor_vazio">Informe o nome do autor.</string>
+    <string name="erro_titulo_vazio">Informe o título da cápsula.</string>
+    <string name="erro_ano_vazio">Informe o ano de abertura.</string>
+    <string name="erro_ano_nao_posterior">O ano de abertura deve ser posterior a 2026.</string>
+    <string name="erro_mensagem_vazia">Escreva a mensagem para o futuro.</string>
+    <string name="erro_mensagem_curta">A mensagem deve ter pelo menos 20 caracteres.</string>
+
+    <!-- Chaves estáveis dos extras enviados pela Intent -->
+    <string name="EXTRA_AUTOR" translatable="false">extra_autor</string>
+    <string name="EXTRA_TITULO" translatable="false">extra_titulo</string>
+    <string name="EXTRA_ANO" translatable="false">extra_ano</string>
+    <string name="EXTRA_MENSAGEM" translatable="false">extra_mensagem</string>
+    <string name="EXTRA_IMPORTANCIA" translatable="false">extra_importancia</string>
+
+    <!-- Tela 2: visualização -->
+    <string name="titulo_tela_capsula">Cápsula selada</string>
+    <string name="frase_capsula">Cápsula criada por %1$s para ser aberta em %2$s.</string>
+    <string name="rotulo_mensagem">Mensagem</string>
+    <string name="descricao_imagem_relogio">Ilustração de um relógio marcando o tempo até a abertura</string>
+    <string name="botao_editar">Editar</string>
+    <string name="botao_compartilhar">Compartilhar</string>
+    <string name="titulo_compartilhar">Compartilhar cápsula</string>
+    <string name="texto_compartilhar">Minha cápsula para %1$s: %2$s. %3$s</string>
+</resources>

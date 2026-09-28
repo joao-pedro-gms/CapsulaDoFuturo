@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    João Pedro G M Silva
+    Matrícula: 20251012000740
+    ADS PUC Goiás
+-->
+<resources>
+    <color name="primaria">#5B21B6</color>
+    <color name="primaria_escura">#3B0764</color>
+    <color name="destaque">#F59E0B</color>
+    <color name="fundo">#F6F3FF</color>
+    <color name="cartao">#FFFFFF</color>
+    <color name="texto_principal">#24123F</color>
+    <color name="texto_secundario">#5B5175</color>
+</resources>
