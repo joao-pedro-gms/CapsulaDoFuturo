@@ -12,19 +12,18 @@ componentes de formulário, validação, eventos, View Binding e navegação com
 
 ## Como compilar
 
-Requisitos: JDK 21, Gradle 8.13 e Android SDK (ver `BUILD_ENV.md`).
+Requisitos: JDK 17 e Android SDK (`ANDROID_HOME`). O Gradle 8.9 vem pelo wrapper (`./gradlew`), compatível com o Android Gradle Plugin 8.5.2.
 
 ```bash
-export JAVA_HOME=$HOME/.local/jdk21
 export ANDROID_HOME=$HOME/Android/Sdk
-$HOME/.local/gradle/gradle-8.13/bin/gradle assembleDebug
+./gradlew :app:assembleDebug
 # APK gerado em: app/build/outputs/apk/debug/app-debug.apk
 ```
 
 Testes de validação (JVM pura, sem dispositivo):
 
 ```bash
-$HOME/.local/gradle/gradle-8.13/bin/gradle testDebugUnitTest
+./gradlew testDebugUnitTest
 ```
 
 ## Estrutura
